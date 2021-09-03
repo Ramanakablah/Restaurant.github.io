@@ -1,0 +1,73 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Home 
+    
+    style 
+      include  ../views/Home.css 
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap") 
+    body 
+     nav
+      ul   
+       li #[a(href="/") Home]
+       li #[a(href="/Services") Services]
+       img(src="https://st.depositphotos.com/2926881/3774/v/950/depositphotos_37748769-stock-illustration-pizza-chef-logo.jpg", alt="logo")
+       li #[a(href="/Delivery") Delivery]
+       li #[a(href="/contact") Contact us]        
+       div#dropdown
+         button(id='drpbtn') Dropdown 
+         div#buttoncontent
+          a(href="/") Home
+          a(href="/Services") Sercises
+          a(href="/Delivery") Delivery
+          a(href="/contact") Contact 
+     marquee(direction="left") 
+      div#delicacies  
+         div#slide 
+          div#Delica 
+           img(src="https://thechutneylife.com/wp-content/uploads/2017/09/Veg-Hakka-Noodles-The-Chutney-Life-4.jpg", alt="Hakka Noodle")  
+         div#slide 
+          div#Delica
+           img(src="https://rachnas-kitchen.com/wp-content/uploads/2017/07/rasmalai-2-e1505245876472-gpo.jpg", alt="Rasmalai")  
+         div#slide 
+          div#Delica  
+           img(src="https://img-global.cpcdn.com/recipes/2f833284044a3639/1200x630cq70/photo.jpg", alt="Biryani.") 
+         div#slide 
+          div#Delica  
+           img(src="https://img-global.cpcdn.com/recipes/ff515314282d0608/1200x630cq70/photo.jpg", alt="Chhole Bhature.")
+     section#sec
+      div#Name 
+       header 
+        |TAJ restaurnt
+       div#intro  
+        |Best Family services, For you and your family with world class dinning servics 
+      div#book  
+       header 
+        |Fill up
+       form(action="/", method="POST", id="fill") 
+        input(type="text" ,placeholder="Name", name="Name")
+        input(type="number", placeholder="Mobile number", name="Mob")
+        input(type="email", placeholder="E-Mail", name="mail")
+        input(type="date" ,name="Date")
+        input(type="time" ,name="Time")
+        textarea(name="Other", cols="30", rows="10", placeholder="Any other information or request you want to add")   
+        button(type="submit", id='btn') Submit 
+     section#history 
+      div#hist 
+       header 
+        |SINCE 1979. 
+       div#histo
+       |Maintaining the legacy of our Indian Culture with new addings. 
+      div#fotu
+       img(src="https://i.ndtvimg.com/i/2017-06/kolkata-cabin_620x350_51496644889.jpg", alt="Our first day")    
+     footer
+      div#copyright
+       | All copyrights &copy are reserved by Kr.Restraunts and owner.
+      div#contact 
+       |For our Prestigeous Services Contact the belows:
+      div#conta
+       a(href="/") 9876586765 / 9785447657    
+    script
+     include index.js   

@@ -1,0 +1,44 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Delivery 
+        style 
+          include  ../views/Home.css 
+          include  ../views/contact.css
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap")   
+    body 
+     nav
+      ul 
+       li #[a(href="/") Home]
+       li #[a(href="/Services") Services]
+       img(src="https://st.depositphotos.com/2926881/3774/v/950/depositphotos_37748769-stock-illustration-pizza-chef-logo.jpg", alt="logo")
+       li #[a(href="/Delivery") Delivery]
+       li #[a(href="/Contact") Contact us] 
+     section#Contact  
+      header Contact Us 
+      div#con 
+       span#co 
+        |E-Mail:
+       div
+        a(href="") KrRestaurents@gmail.com. 
+      div#con 
+       span#co
+        |Phone no:
+       div 
+        a(href="") 9876586765 / 9785447657  
+      div#con1
+       span#co   
+        |Queries 
+       div#que
+        textarea(name="Query", cols="30", rows="10")
+        button#btn(type="submit") Submit   
+
+     footer
+      div#copyright
+       | All copyrights &copy are reserved by Kr.Restraunts and owner.
+      div#contact 
+       |For our Prestigeous Services Contact the belows:
+      div#conta
+       a(href="/") 9876586765 / 9785447657      

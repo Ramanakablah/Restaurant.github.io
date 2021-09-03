@@ -1,0 +1,220 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color:rgb(255, 212, 133)   
+}
+nav{
+    background-color:white;
+    width: 100%; 
+    position: static;
+    top: 0px;
+    font-family: 'Sacramento', cursive;
+    opacity: 0.9;
+    position: sticky;
+    z-index: 1000;
+}
+#dropdown{
+    position: relative;
+    display: none;
+    left: 30px;
+}
+#drpbtn{
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+#buttoncontent{
+    background-color: rgb(146, 148, 253);
+    color: orange;
+    border: none;
+    display: none;
+    z-index: 1001;
+}
+#buttoncontent a{
+    text-decoration: none;
+    padding: 4px 9px;
+    display: block;
+    color: orange;
+    background-color: white;
+}
+#dropdown:hover #buttoncontent{
+    display: block;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+li{
+    list-style: none;
+    padding: 4px ;
+    font-size: 1.8rem;
+    margin: 10px 0px;
+}
+nav a {
+    text-decoration:none ;
+    color: rgb(250, 69, 69);
+    font-weight: bold;
+}
+nav ul img{
+    height: 70px;
+    width: 76px;
+}
+#delicacies{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 20px;
+}
+#slide{
+    width: 50%;
+    margin: 2px;
+}
+#slide #intro{
+    width: 100%; 
+}
+#Delica img {
+    width: 100%;
+    height: 200px;
+} 
+#sec{
+    display: flex;
+    flex-wrap: wrap;
+    background: url('https://cache.marriott.com/marriottassets/marriott/AMDCY/amdcy-restaurant-0053-hor-feat.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: auto;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 100px; ;
+    color: azure;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#name{
+    display: flex;
+    width: 70%; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#name header{ 
+    font-size: 5rem;
+    font-weight: bold;
+}
+#book{
+    display: flex;
+    flex-direction: column;
+    /* width: 25%; */
+    justify-content: center;
+    background-color: red;
+    background-image: url('https://www.freevector.com/uploads/vector/preview/7899/FreeVector-Red-Sparkles-Vector.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+}
+#fill{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#book header{
+    font-size: 1.6rem;
+    margin: 10px 0px 10px 0px;
+    text-align: center;
+}    
+#fill input{
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    width: 80%;
+}
+#fill textarea{
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    width: 80%;
+}
+#btn{
+    font-size: 1.1rem;
+    background-color: red;
+    color: yellow;
+    border: solid 1px white;
+    border-radius: 8px;
+    padding: 5px;
+    margin-top: 10px;
+}
+#history{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    padding: 150px 0px 150px 0px;
+    background-image: url('https://www.hotelierindia.com/public/images/2020/02/11/Top-15-restaurants-.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: lighten;
+    margin-bottom: 40px;
+}
+#hist{
+    display: flex;
+    /* width: 75%; */
+    color: white;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#hist header{
+    color: white;
+    font-size: 5rem;
+    font-weight:bold;
+}
+#fotu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#fotu img{
+    border: solid 14px white;
+    width: 80%;
+}    
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+    bottom: 0px;
+    padding: 10px 0px 10px 0px;
+    background-color: orange
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+@media (max-width:870px) {
+    nav ul li{
+        display: none;
+    }
+    nav ul li #dropdown{
+        display: block;
+    }    
+}

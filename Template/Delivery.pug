@@ -1,0 +1,81 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Delivery 
+        style 
+          include  ../views/Home.css 
+          include  ../views/Delivery.css
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap")   
+    body 
+     nav
+      ul 
+       li #[a(href="/") Home]
+       li #[a(href="/Services") Services]
+       img(src="https://st.depositphotos.com/2926881/3774/v/950/depositphotos_37748769-stock-illustration-pizza-chef-logo.jpg", alt="logo") 
+       li #[a(href="/Delivery") Delivery]
+       li #[a(href="/contact") Contact us] 
+     section#bod
+      div#fills 
+        header 
+         |Order Now
+        form(action="/Delivery",method="POST")
+         input(type="text", placeholder="Enter your Name",name="Name")
+         input(type="Number", placeholder="Enter your Mobile number",name="Mobno")
+         input(type="number",placeholder="Enter the weight/Quantity",name="weight")
+         input(type="Date",name="Date")
+         input(type="text", placeholder="Enter the Sweet ",name="Sweet")
+         textarea(name="Address", cols="30", rows="10", placeholder="Address")
+         button#btn(type="submit",class ='btn1') Submit 
+         button#btn(type="reset",class ="btn2") Reset  
+      div#choose
+       div#swee
+        img(src="https://www.whiskaffair.com/wp-content/uploads/2015/11/Gulab-Jamun-5-500x500.jpg", alt="Sweets")
+        header
+         h3 
+          | Gulab Jamun
+        div
+         |Rs: 280/Kg  
+       div#swee
+        img(src="https://www.indianhealthyrecipes.com/wp-content/uploads/2014/09/rasgulla-recipe-1-500x500.jpg", alt="Sweets")
+        header
+         h3  
+          |Rassgulla  
+        div  
+         |Rs: 250/Kg
+       div#swee
+        img(src="https://www.milkpalace.com/shop/wp-content/uploads/2020/10/kalakand.jpg", alt="Sweets")
+        header
+         h3
+          |Kalakand
+        div
+         |Rs: 550/Kg  
+       div#swee
+        img(src="https://new-img.patrika.com/upload/2018/03/07/motichur_laddu_2457586_835x547-m.jpg", alt="Sweets")
+        header
+         h3 
+          |Motichoor Ladoo
+        div
+         |Rs: 250/Kg  
+       div#swee
+        img(src="https://i2.wp.com/www.rasoimenu.com/wp-content/uploads/2015/07/Dates-Rasmalai-Recipe.jpg?fit=1920%2C1080&ssl=1", alt="Sweets")
+        header
+         h3  
+          |Rasmalai
+        div 
+         |Rs: 70/Piece 
+       div#swee
+        img(src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGi-I5i1dooopJNwG-Tlt5CT0wgXwnWQd5PQ&usqp=CAU", alt="Sweets")
+        header
+         h3 
+          |Kaju Katli
+        div  
+        |Rs: 1000/Kg
+     footer
+      div#copyright
+       | All copyrights &copy are reserved by Kr.Restraunts and owner.
+      div#contact 
+       |For our Prestigeous Services Contact the belows:
+      div#conta
+       a(href="/") 9876586765 / 9785447657    

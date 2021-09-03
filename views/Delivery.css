@@ -1,0 +1,93 @@
+#bod{
+    display: flex;
+    justify-content: space-around;
+}
+#fills{
+    display: flex;
+    width: 30%;
+    background-color: white;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px 10px;
+}
+#fills header{
+    color: rgb(252, 164, 0);
+    text-align: center;
+    font-size: 2.5rem;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 95%;
+    background-color: orange;
+    border-radius: 30px;
+}
+form input{
+    width: 90%;
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin: 20px 0px 10px 0px;
+    border: none;
+}
+form textarea{
+    border: none;
+    width: 90%;
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin: 20px 0px 10px 0px;
+}
+form #btn{
+    color: white;
+    background-color: red;
+    font-size: 1rem;
+    font-weight: bold;
+    border: solid 3px white;
+    margin: 10px 0px 10px 0px;
+}
+#choose{
+    width: 65%;
+    height: auto;
+    background-color: rgb(255, 237, 197);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+#swee{
+    display: flex;
+    width: 43%;
+    background-color: white;
+    border: solid 5px orangered;
+    border-radius: 30px;
+    margin: 17px 0px;
+    color: orange;
+    align-items: center;
+    flex-direction: column;
+}
+#swee img{
+  height:300px;
+  width:300px;
+  border-radius: 35px;
+  margin: 18px;
+}
+#swee div{
+    text-align: left;
+}
+#btn2{
+    color: white;
+    background-color: red;
+    font-size: 1rem;
+    font-weight: bold;
+    border: solid 3px rgb(235, 164, 164);
+    border-radius: 8px;
+    margin-top: 40px; ;
+}
+footer{
+    margin-top: 60px;
+}
